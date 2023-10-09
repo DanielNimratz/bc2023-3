@@ -26,9 +26,7 @@ function main() {
             fs.writeFile('text.txt', lowestValueStr, 'utf8', (err) => {
                 if (err) {
                   console.error('Error writing to file:', err);
-                } else {
-                  console.log(`Updated file with information about the element with the lowest value: ${minKey}: ${minValue}`);
-                }
+                } 
               });
             } else {
               console.log('No elements found in the JSON.');
