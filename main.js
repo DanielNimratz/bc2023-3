@@ -21,7 +21,6 @@ function main() {
               } 
             if (minKey !== null) {
             let valueName = jsonObj[minKey].txt;
-            let minValue = jsonObj[minKey].value;
             let lowestValueStr = valueName + ":" + minValue;
             fs.writeFile('output.txt', lowestValueStr, 'utf8', (err) => {
                 if (err) {
