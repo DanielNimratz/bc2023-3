@@ -23,7 +23,7 @@ function main() {
             let valueName = jsonObj[minKey].txt;
             let minValue = jsonObj[minKey].value;
             let lowestValueStr = valueName + ":" + minValue;
-            fs.writeFile('text.txt', lowestValueStr, 'utf8', (err) => {
+            fs.writeFile('output.txt', lowestValueStr, 'utf8', (err) => {
                 if (err) {
                   console.error('Error writing to file:', err);
                 } 
